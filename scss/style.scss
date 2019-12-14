@@ -1,5 +1,45 @@
-html{
-    padding:0;
-    margin:0;
+/* GOOGLE FONTS MONSE */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$color-navegacion:#fff;
+$color-top:#000;
+$font-principal:'Montserrat', sans-serif;
+
+html {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
+/* NAVBAR BOOTSTRAP */ 
+
+.logo{
+    padding-top:10px;
+}
+
+.navbar {
+    background: rgb(26, 113, 250);
+    background: linear-gradient(58deg, rgba(26, 113, 250, 1) 0%, rgba(60, 228, 255, 1) 100%);
+}
+
+nav ul li a {
+    color:$color-navegacion;
+    padding-left: 20px;
+    font-family: $font-principal;
+}
+
+/* TOP HEAD MENU */
+.top-head-menu{
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+
+.top-head-menu li{
+    padding:20px;
+    a{
+        text-decoration: none;
+        color:$color-top;
+    }
+}
+

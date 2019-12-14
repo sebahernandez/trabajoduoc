@@ -1,7 +1,38 @@
+/* GOOGLE FONTS MONSE */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 html {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+/* NAVBAR BOOTSTRAP */
+.logo {
+  padding-top: 10px; }
+
+.navbar {
+  background: #1a71fa;
+  background: linear-gradient(58deg, #1a71fa 0%, #3ce4ff 100%); }
+
+nav ul li a {
+  color: #fff;
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif; }
+
+/* TOP HEAD MENU */
+.top-head-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none; }
+
+.top-head-menu li {
+  padding: 20px; }
+  .top-head-menu li a {
+    text-decoration: none;
+    color: #000; }
 
 /*# sourceMappingURL=style.css.map */
