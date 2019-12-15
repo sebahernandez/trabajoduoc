@@ -10,6 +10,14 @@ $subtitulos-tam:50px;
 $enl-color-title:#337ab7;
 $color-parrafos:#6c757d;
 
+@mixin buttons{
+    padding:16px 30px;
+    background: rgb(26, 113, 250);
+    background: linear-gradient(58deg, rgba(26, 113, 250, 1) 0%, rgba(60, 228, 255, 1) 100%);
+    color:white;
+    margin-top:50px;
+}
+
 html {
     padding: 0;
     margin: 0;
@@ -129,6 +137,9 @@ h4.descarga {
 
 .articulos{
     padding:20px 0px;
+    h3{
+        font-size:20px;
+    }
 }
 
 
@@ -137,3 +148,34 @@ h4.descarga {
 }
 
 
+.footer{
+    background:rgb(26, 113, 250);
+    margin-top:100px;
+    padding:50px 0px;
+    h5{
+        font-size:20px;
+        color:#fff;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+
+.btn-read{
+    @include buttons;
+    &:hover{
+        color:#fff;
+    }
+
+}
+
+.link{
+    margin-top:30px;
+}
+
+.links-footer{
+   
+    list-style: none;
+    a{
+        color:$color-navegacion;
+    }
+}

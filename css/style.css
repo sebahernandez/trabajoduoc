@@ -106,8 +106,37 @@ h4.descarga {
 
 .articulos {
   padding: 20px 0px; }
+  .articulos h3 {
+    font-size: 20px; }
 
 .titulo-post a {
   color: #337ab7; }
+
+.footer {
+  background: #1a71fa;
+  margin-top: 100px;
+  padding: 50px 0px; }
+  .footer h5 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px; }
+
+.btn-read {
+  padding: 16px 30px;
+  background: #1a71fa;
+  background: linear-gradient(58deg, #1a71fa 0%, #3ce4ff 100%);
+  color: white;
+  margin-top: 50px; }
+  .btn-read:hover {
+    color: #fff; }
+
+.link {
+  margin-top: 30px; }
+
+.links-footer {
+  list-style: none; }
+  .links-footer a {
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
