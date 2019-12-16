@@ -22,9 +22,12 @@ p {
   background: linear-gradient(58deg, #1a71fa 0%, #3ce4ff 100%); }
 
 nav ul li a {
+  font-weight: 600;
   color: #fff;
   padding-left: 10px;
   font-family: "Montserrat", sans-serif; }
+  nav ul li a:hover {
+    color: #f2ff00; }
 
 /* TOP HEAD MENU */
 .top-head-menu {
@@ -135,8 +138,14 @@ h4.descarga {
   margin-top: 30px; }
 
 .links-footer {
+  padding: 0;
   list-style: none; }
   .links-footer a {
     color: #fff; }
+
+.fa {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

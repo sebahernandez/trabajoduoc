@@ -43,9 +43,14 @@ p{
 }
 
 nav ul li a {
+    font-weight: 600;
     color: $color-navegacion;
     padding-left: 10px;
     font-family: $font-principal;
+
+    &:hover{
+        color:#f2ff00;
+    }
 }
 
 /* TOP HEAD MENU */
@@ -173,9 +178,15 @@ h4.descarga {
 }
 
 .links-footer{
-   
+   padding:0;
     list-style: none;
     a{
         color:$color-navegacion;
     }
+}
+
+.fa{
+    color:#fff;
+    font-size:20px;
+    padding-right: 10px;
 }
