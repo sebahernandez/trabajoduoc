@@ -10,12 +10,12 @@ $subtitulos-tam:50px;
 $enl-color-title:#337ab7;
 $color-parrafos:#6c757d;
 
-@mixin buttons{
-    padding:16px 30px;
+@mixin buttons {
+    padding: 16px 30px;
     background: rgb(26, 113, 250);
     background: linear-gradient(58deg, rgba(26, 113, 250, 1) 0%, rgba(60, 228, 255, 1) 100%);
-    color:white;
-    margin-top:50px;
+    color: white;
+    margin-top: 50px;
 }
 
 html {
@@ -24,13 +24,21 @@ html {
     box-sizing: border-box;
 }
 
+
+.no-gutters {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 input.form-control {
     border: 0px;
     border-radius: 0px;
 }
-p{
-    color:$color-parrafos;
+
+p {
+    color: $color-parrafos;
 }
+
 /* NAVBAR BOOTSTRAP */
 
 .logo {
@@ -48,8 +56,8 @@ nav ul li a {
     padding-left: 10px;
     font-family: $font-principal;
 
-    &:hover{
-        color:#f2ff00;
+    &:hover {
+        color: #f2ff00;
     }
 }
 
@@ -121,89 +129,129 @@ h4.descarga {
 }
 
 .noticias-recientes {
-    h2{
-        color:$enl-color-title;
-        font-size:$subtitulos-tam;
+    h2 {
+        color: $enl-color-title;
+        font-size: $subtitulos-tam;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        padding:60px 0px;
+        padding: 60px 0px;
     }
 
-    h2:before{
+    h2:before {
         position: absolute;
         content: "";
-        width:100px;
+        width: 100px;
         height: 4px;
-        background:#ccc;
-        margin-top:20px;
+        background: #ccc;
+        margin-top: 20px;
     }
 }
 
-.articulos{
-    padding:20px 0px;
-    h3{
-        font-size:20px;
+.articulos {
+    padding: 20px 0px;
+
+    h3 {
+        font-size: 20px;
     }
 }
 
 
-.titulo-post a{
-    color:$enl-color-title;
+.titulo-post a {
+    color: $enl-color-title;
 }
 
 
-.footer{
-    background:rgb(26, 113, 250);
-    margin-top:100px;
-    padding:50px 0px;
-    h5{
-        font-size:20px;
-        color:#fff;
+.footer {
+    background: rgb(26, 113, 250);
+    margin-top: 100px;
+    padding: 50px 0px;
+
+    h5 {
+        font-size: 20px;
+        color: #fff;
         font-weight: 700;
         letter-spacing: 2px;
     }
 }
 
-.btn-read{
+.btn-read {
     @include buttons;
-    &:hover{
-        color:#fff;
+
+    &:hover {
+        color: #fff;
     }
 
 }
 
-.link{
-    margin-top:30px;
+.link {
+    margin-top: 30px;
 }
 
-.links-footer{
-   padding:0;
+.links-footer {
+    padding: 0;
     list-style: none;
-    a{
-        color:$color-navegacion;
+
+    a {
+        color: $color-navegacion;
     }
 }
 
-.fa{
-    color:#fff;
-    font-size:20px;
+.fa {
+    color: #fff;
+    font-size: 20px;
     padding-right: 10px;
 }
 
-/* TARGETAS */ 
-.card{
-    width:18rem;
-    margin:60px 20px 20px 0px;
+/* TARGETAS */
+
+.btn-primary {
+    border-radius: 0px;
 }
 
-
-.btn-primary{
-    border-radius:0px;
+h5.card-title a{
+    font-size:18px;
+    color:#000;
 }
 
 .card-img-top {
     width: 100%;
     height: 13vw;
     object-fit: cover;
+}
+
+@media (max-width:767px) {
+
+    img.card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+input.form-control {
+    border: 1px solid #ccc;
+}
+
+
+.sidebar-articulos, .sidebar-categorias {
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.paginador{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:30px
+}
+
+.links-categoria{
+    color:#000;
+    a{
+        color: #000;
+    }
+
+    &:visited{
+        color: #000;
+    }
+    
 }
