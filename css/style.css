@@ -235,6 +235,9 @@ input.form-control {
             justify-content: flex-end;
     list-style: none; }
     .top-head-menu .top-head-menu li {
-      padding: 5px 10px; } }
+      padding: 5px 10px; }
+
+  .revista {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
